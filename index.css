@@ -1,0 +1,201 @@
+body {
+    padding: 0 80px;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+a {
+    text-decoration: none;
+    color: hsl(0, 0%, 41%);
+}
+a:hover {
+    color: hsl(0, 0%, 8%);
+    font-weight: 600;
+}
+header a {
+    font-size: 16px;
+}
+#name-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#name-navbar h2 {
+    color: hsl(0, 0%, 8%);
+    font-size: 40px;
+}
+#navbar {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#navbar li {
+    margin: auto 15px;
+}
+#navbar-login-register {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+#login-register {
+    position: relative;
+    left: 80%;
+}
+#login-register a {
+    margin-right: 50px;
+}
+#login-register button {
+    padding: 10px 20px;
+    border: 2px solid hsl(0, 0%, 41%);
+    background-color: transparent;
+    border-radius: 10px;
+    color: hsl(0, 0%, 41%);
+    font-weight: 500;
+}
+#login-register button:hover {
+    cursor: pointer;
+    color: hsl(0, 0%, 8%);
+    border: 2px solid hsl(0, 0%, 8%);
+    font-weight: 600;
+}
+section {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+#content h1 {
+    font-size: 60px;
+}
+#content p {
+    font-size: 18px;
+    font-weight: 500;
+    color: hsl(0, 0%, 41%);
+}
+#hero-img {
+    width: 40%;
+    height: 550px;
+}
+#content button {
+    background-color: hsl(0, 0%, 8%);
+    color: hsl(0, 0%, 98%);
+    border: none;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 20px;
+    padding: 15px 20px;
+    margin-top: 50px;
+}
+#content button:hover {
+    background-color: transparent;
+    border: 1px solid hsl(0, 0%, 8%);
+    cursor: pointer;
+    color: hsl(0, 0%, 8%);
+}
+#credits img {
+    width: 80px;
+    margin-right: 60px;
+}
+#credits img:nth-child(2) {
+    width: 60px;
+}
+#credits {
+    margin-top: 80px;
+}
+.popup {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: hsl(0, 0%, 98%);
+    border-radius: 20px;
+    width: fit-content;
+    padding: 20px;
+    z-index: 99;
+    font-weight: bold;
+}
+.popup-content {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.popup-content a {
+    margin-left: 20px;
+    color: hsl(0, 0%, 41%);
+}
+#popup-company {
+    position: absolute;
+    left: 24%;
+    padding: 10px 25px;
+    top: 13%;
+    display: none;
+}
+#popup-features {
+    position: absolute;
+    left: 12%;
+    top: 13%;
+    display: none;
+}
+#popup-company a {
+    margin-top: 10px;
+}
+#menu,
+#close {
+    display: none;
+}
+@media (max-width: 499px) {
+    body {
+        padding: 0 20px;
+    }
+    #navbar-login-register {
+        flex-direction: column;
+        height: 100vh;
+        width: 200px;
+        background-color: hsl(0, 0%, 98%);
+        right: -500px;
+        position: fixed;
+        top: 0;
+        transition: 0.6s ease-in;
+        padding: 20px;
+    }
+    #name-navbar h2  {
+        font-size: 45px;
+    }
+    #navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        align-self: self-start;
+    }
+    #login-register {
+        left: 0%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    header a {
+        font-size: 17px;
+        font-weight: 700;
+    }
+    #navbar li {
+        margin: 10px 0px;
+        text-align: right;
+    }
+    #login-register a {
+        margin-right: 0px;
+        margin-bottom: 5px;
+    }
+    #login-register button {
+        padding: 10px 40px;
+        margin-top: 5px;
+    }
+    #menu {
+        display: initial;
+        position: relative;
+        left: 55vw;
+    }
+    #close {
+        display: initial;
+        margin: 20px 0px 20px 80px;
+    }
+}
